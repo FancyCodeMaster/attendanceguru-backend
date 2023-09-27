@@ -107,7 +107,7 @@ public class SecurityConfig {
         return http.csrf().disable().
                 sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).
                 and().
-                authorizeHttpRequests().requestMatchers("/signIn" , "/signup" ,"/signup/**" , "/admin/**" , "/attendance/**" , "/**").permitAll()
+                authorizeHttpRequests().requestMatchers("/signIn" , "/signup" ,"/signup/**" , "/admin/**" , "/attendance/**").permitAll()
                 .anyRequest().authenticated().and()
                 .addFilterBefore(filter, UsernamePasswordAuthenticationFilter.class)
                 .build();

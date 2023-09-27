@@ -205,6 +205,7 @@ public class Login_SignUp {
                     int roll = adminAUserService.findByEmail(user1.getEmail()).get().getRoll();
                     Class class_id = adminAUserService.findByEmail(user1.getEmail()).get().getAClass() ;
                     studentService.save_student(user1, roll  , class_id);
+
                 }
                 if (role.equals("Teacher")) {
                     teacherService.save_teacher(user1);

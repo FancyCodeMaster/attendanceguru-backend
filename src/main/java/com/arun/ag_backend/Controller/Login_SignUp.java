@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@CrossOrigin(origins = "*", allowCredentials = "true")
+@CrossOrigin(origins = "${cross.origin.url}", allowCredentials = "true")
 @RestController
 public class Login_SignUp {
 

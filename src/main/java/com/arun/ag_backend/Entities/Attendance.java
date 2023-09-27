@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 @Entity
@@ -27,6 +28,8 @@ public class Attendance {
     private ClassRoutine classRoutine;
 
     private LocalDate date;
+
+//    private DayOfWeek day;
 
     private String status;
 }
